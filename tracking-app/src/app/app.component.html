@@ -1,0 +1,13 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+</div>
+
+<div class="text-center" style="margin:20px;">
+<button  style = "text-align: right;" (click)= 'feedsList=true'>Tracking Feeds</button>
+<button  style = "text-align: right;" (click)= 'feedsList=false'>Summary</button>
+</div>
+<app-tracking-feed [hidden]= "!feedsList"></app-tracking-feed>
+<app-summary [hidden]= "feedsList"></app-summary>

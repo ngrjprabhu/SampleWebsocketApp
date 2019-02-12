@@ -1,0 +1,25 @@
+<h1 style = "text-align: center">
+  Tracking feeds
+</h1>
+
+
+<div class="container">
+  <table class="table table-striped">
+    <thead>
+        <tr>
+          <th>Vehicle ID</th>
+          <th>Vehicle Number</th>
+          <th>Distance covered</th>
+          <th>Status</th>
+        </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let vehicle of feeds | async | orderBy:'distance':true">
+        <td>{{ vehicle.id }}</td>
+        <td>{{ vehicle.vehicleNumber }}</td>
+        <td>{{ vehicle.distance }}</td>
+        <td>{{ vehicle.status }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

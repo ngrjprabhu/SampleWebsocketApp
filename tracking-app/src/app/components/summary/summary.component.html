@@ -1,0 +1,10 @@
+<h1 style = "text-align: center">
+    Tracking summary
+  </h1>
+<p style = "text-align: right;" (click)='feedsList = true'>Tracking feeds</p>
+
+<div class="container"> 
+  <ul *ngFor="let s of summary | async">
+    <li style="text-transform:capitalize;"> {{s.name}} : {{s.count}}</li>
+  </ul>
+</div>

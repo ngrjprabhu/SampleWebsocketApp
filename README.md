@@ -17,6 +17,7 @@ App should be now running on http://localhost:4444
 Make sure you have [Angular-CLI](https://cli.angular.io) installed
 ```
 $ cd tracking-app
+$ npm install
 $ ng serve
 ```
 App should be now running, visit webserver at http://localhost:4200/
